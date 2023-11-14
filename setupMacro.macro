@@ -1,0 +1,32 @@
+st=start %1
+
+l=dir
+c=cls
+x=exit
+ex=explorer %cd%
+np="%PROGRAMFILES%\Notepad++\notepad++.exe" $*
+st=start &*
+t=cd /D "%SystemDrive%\Temp\"
+re=refreshenv
+
+g=git $*
+gs=git status
+gc=git clone $*
+gk=git checkout $*
+gu=git push
+gp=git pull --rebase
+gf=git fetch origin
+gl=git branch -r & git branch -a
+gr=git config --get remote.origin.url & git remote show origin
+gm=git commit $*
+gkr=git checkout -b $1 origin/$1
+gac=git add * & git commit -m "Auto commit" & git pull --rebase &  git push
+gas=git commit -m "Auto commit" & git pull --rebase & git push
+gst=git reset --hard
+
+ns=ng serve
+ni=npm install $*
+nv=node --version & npm --version
+nsetup=npm install -g @angular/cli
+
+pullall=git -C C:\Temp\kafkaconfig\ pull & git -C C:\Temp\linuxconfig\ pull && git -C C:\Temp\scripts\ pull && git -C C:\Temp\scripts\ pull && git -C C:\Temp\settings\ pull
