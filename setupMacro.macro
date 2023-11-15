@@ -1,11 +1,8 @@
-st=start %1
-
 l=dir
 c=cls
 x=exit
 ex=explorer %cd%
 np="%PROGRAMFILES%\Notepad++\notepad++.exe" $*
-st=start &*
 t=cd /D "%SystemDrive%\Temp\"
 re=refreshenv
 
@@ -29,4 +26,4 @@ ni=npm install $*
 nv=node --version & npm --version
 nsetup=npm install -g @angular/cli
 
-pullall=git -C C:\Temp\kafkaconfig\ pull & git -C C:\Temp\linuxconfig\ pull && git -C C:\Temp\scripts\ pull && git -C C:\Temp\scripts\ pull && git -C C:\Temp\settings\ pull
+dm=doskey /MACROS:ALL
