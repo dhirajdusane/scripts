@@ -27,3 +27,6 @@ nv=node --version & npm --version
 nsetup=npm install -g @angular/cli
 
 dm=doskey /MACROS:ALL
+
+tf=terraform $*
+aztf=aztfy $*
